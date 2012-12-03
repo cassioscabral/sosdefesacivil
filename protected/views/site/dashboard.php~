@@ -1,0 +1,211 @@
+<? if (!Yii::app()->user->isGuest) { ?>
+
+
+<?
+// carregando conteudo com ajax
+    /*echo CHtml::ajaxButton ("Update data",
+      CController::createUrl('livrodeatos/atos/create'), 
+      array('update' => '#data'));
+      echo '<div id="data"></div>'*/
+?>
+
+    <div class="btn-toolbar">
+        <div class="btn-group">
+            <button class="btn btn-large">Usuários</button>
+            <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Gerenciar</a></li>
+                <li><a href="#">Adicionar</a></li>
+            </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+            <button class="btn btn-large">E-mails</button>
+            <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/subscritores/admin">Gerenciar</a></li>
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/subscritores/index">Adicionar</a></li>
+            </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+            <button class="btn btn-large">Publicidade</button>
+            <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/sites/">Sites</a></li>
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/sites/adicionar">Adicionar site</a></li>
+                <li class="divider"></li>
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/sites/zonas">Zonas</a></li>
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/sites/zonas/adicionar">Adicionar zona</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Banner</a></li>
+                <li><a href="#">Adicionar Banner</a></li>
+                <li class="divider"></li>
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/sites/campanhas">Campanhas</a></li>
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/sites/campanhas/adicionar">Adicionar Campanha</a></li>
+            </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+            <button class="btn btn-large">Recursos Humasno</button>
+            <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Servidores</a></li>
+                <li><a href="#">Departamentos</a></li>
+                <li><a href="#">Folha de Ponto</a></li>
+            </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+            <button class="btn btn-large">Ao Vivo</button>
+            <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/aovivo/">Exibir a tela do ao vivo</a></li>
+                <li><a href="#">Plano de fundo</a></li>
+                <li><a href="#">Hashtag</a></li>
+            </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+            <button class="btn btn-large">Backup</button>
+            <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/backup/">Realizar cópia de segurança</a></li>
+                <li><a href="#">Gerenciar cópias existentes</a></li>
+            </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group">
+            <button class="btn btn-large">Livro de Atos</button>
+            <button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/livrodeatos/atos/index">Exibir últimas Portarias</a></li>
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/livrodeatos/atos/admin">Gerenciar Portarias</a></li>
+                <li>
+                    <a style="display: none; "href="<?= Yii::app()->request->baseUrl ?>/livrodeatos/atos/create">Adicionar Portaria</a>
+                    <a href="#myModalX" id="adicionarato" role="button" data-toggle="modal">Adicionar Portaria</a>		
+                </li>
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/livrodeatos/locatao/admin">Lotação</a></li>
+                <li><a href="<?= Yii::app()->request->baseUrl ?>/livrodeatos/cargos/admin">Cargos</a></li>
+            </ul>
+        </div><!-- /btn-group -->
+    </div><!-- /btn-toolbar -->
+
+
+    <div class="modal" id="myModal" style="display: none;"tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Adicionar Portaria</h3>
+        </div>
+        <div class="modal-body">
+	    <div id="data">
+		    <p>
+		        <?php //echo $this->renderPartial('_form', array('model'=>$model)); ?>
+		    </p>
+	    </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+            <button class="btn btn-primary">Salvar</button>
+        </div>
+    </div>
+
+
+
+    <div style="display: none;">
+        <div class="row-fluid">
+            <div class="span4">
+                <h2>Usuários</h2>
+                <p>Gerencie os usuários</p>
+                <p><a class="btn" href="#">Detalhes&raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+        </div><!--/row-->
+        <div class="row-fluid">
+            <div class="span4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+        </div><!--/row-->
+    </div><!--/span-->
+    </div><!--/row-->
+    </div>
+
+    <table class="table table-bordered table-striped responsive-utilities">
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Phones <small>767px and below</small></th>
+                <th>Tablets <small>979px to 768px</small></th>
+                <th>Desktops <small>Default</small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><code>.visible-phone</code></th>
+                <td class="is-visible">Visible</td>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-hidden">Hidden</td>
+            </tr>
+            <tr>
+                <th><code>.visible-tablet</code></th>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">Visible</td>
+                <td class="is-hidden">Hidden</td>
+            </tr>
+            <tr>
+                <th><code>.visible-desktop</code></th>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">Visible</td>
+            </tr>
+            <tr>
+                <th><code>.hidden-phone</code></th>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">Visible</td>
+                <td class="is-visible">Visible</td>
+            </tr>
+            <tr>
+                <th><code>.hidden-tablet</code></th>
+                <td class="is-visible">Visible</td>
+                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">Visible</td>
+            </tr>
+            <tr>
+                <th><code>.hidden-desktop</code></th>
+                <td class="is-visible">Visible</td>
+                <td class="is-visible">Visible</td>
+                <td class="is-hidden">Hidden</td>
+            </tr>
+        </tbody>
+    </table>
+
+<? } else { ?>
+
+    <form style="" method="post" action="<?= Yii::app()->request->baseUrl; ?>/site/login">
+        <div class="text-n-label">
+            <label for="login">Login:</label><br/>
+            <input type="text" name="LoginForm[username]">
+        </div>
+        <div class="text-n-label">
+            <label for="senha">Senha:</label><br/>
+            <input type="password" name="LoginForm[password]">
+        </div>
+        <input type="submit" class="btn" value="Entrar">
+    </form>
+<? } ?>
+

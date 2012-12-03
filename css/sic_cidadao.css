@@ -1,0 +1,229 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700italic,700,500italic,500,400italic);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    font-family:inherit;
+    vertical-align:baseline;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    height:100%;
+    font-size: 12px;
+    background: url(../img/sic/bgbody.png);
+}
+
+a {text-decoration: none;color: #000;}
+a:hover {text-decoration: underline;}
+
+li {list-style:none;}
+img
+{
+    border: none;
+}
+
+h1, h2, h3, h4, h5
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clear {clear: both;}
+
+.nomeEmail li
+{
+    list-style: none;
+    width: 600px;
+    float: left;
+}
+.nomeEmail li .email
+{
+    margin-left: 188px;
+}
+
+.form_login
+{
+    float: left;
+    margin-left: 70px;
+    width: 310px;
+}
+.form_login .rememberMe
+{
+    margin-bottom: 30px;
+    margin-left: -19px;
+}
+.form_login .rememberMe input,
+.form_login .rememberMe label
+{
+    float: left;
+}
+.form_intro
+{
+    margin-left: 49px;
+}
+
+.form_login .item
+{
+    margin-left: -20px;
+}
+
+.intro
+{
+    float: left;
+    font-size: 11px;
+    left: 100px;
+    position: relative;
+    top: -213px;
+    width: 335px;
+}
+.intro h3
+{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.intro .btn
+{
+    float: left;
+    font-size: 16px;
+    height: 21px;
+    margin-left: 107px;
+    margin-top: 0;
+    width: 107px;
+}
+
+.responsaveis
+{
+    float: left;
+    font-size: 11px;
+    left: -329px;
+    position: relative;
+    top: 196px;
+    width: 335px;
+}
+
+#adicionar
+{
+    margin: 10px 0px 10px 0px;
+    float: left;
+}
+.nomeEmail
+{
+    width: 100%;
+    float: left;
+}
+.nomeEmail ul
+{
+    margin-left: 0px;
+}
+
+#armazenamento_e_educacao_ambiental .row
+{
+    margin-top: 20px;
+    border-bottom: 1px dotted #ccc;
+    float: left;
+    width: 95%;
+    padding: 5px;
+}
+#armazenamento_e_educacao_ambiental h3
+{
+    margin-top: 10px;
+}
+
+#armazenamento_e_educacao_ambiental .textarea
+{
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    height: 100px;
+    padding: 2px;
+}
+#armazenamento_e_educacao_ambiental .btn-primary
+{
+    float: left;
+    margin-left: 425px;
+    margin-top: 0px;
+    padding: 5px;
+}
+#yw0, 
+#yw1 
+{ 
+    float: right;
+    width: 100%;
+}
+
+.content{
+    border: 1px solid red;
+}
+.alert {width: 95%;}
+
+#armazenamento_e_educacao_ambiental  div.form .radio label{
+    font-weight: normal;
+    font-size: 14px;
+}
+#armazenamento_e_educacao_ambiental  .row .radio{
+    margin-top: 5px;
+}
+
+#questionarioView h3
+{
+    float: left;
+    width: 100%;
+    margin: 10px 0px 10px 0px;  
+}
+#questionarioView .row
+{
+    float: left;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+}
+#questionarioView .resposta
+{
+    margin: 5px 0px 0px 0px;
+    font-weight: normal;
+}
+
+/* TOPO */
+#topo {
+    background: url("../img/sic/bgTopo.jpg") repeat-x scroll 0 0 transparent;
+    height: 87px;
+    width: 100%;
+}
+
+#topo .conteudo
+{
+    margin: auto;
+    height: 83px;
+    width: 972px;
+    background: url(../img/sic/bgTopoConteudo.jpg) no-repeat 351px 5px;
+}
+
+#topo .conteudo h3
+{
+    float: right;
+    font-size: 26px;
+    margin: 33px;
+    font-family: 'Quicksand', sans-serif;
+}
+#topo #logoGov
+{
+    float: left;
+    margin: 11px 0px 0px 20px;
+}
+#topo #logoSigePb
+{
+    float: right;
+    margin: 22px 22px 0px 0px;
+}

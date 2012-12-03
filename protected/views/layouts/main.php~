@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><?= Yii::app()->name ?></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="<?= Yii::app()->request->baseUrl ?>/themes/ecosistema/style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="<?= Yii::app()->request->baseUrl ?>/themes/ecosistema/images/favicon.png">
+        <!--[if lt IE 9]>
+        <script src="#http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="<?= Yii::app()->request->baseUrl ?>/">Ecosistema</a>
+                    <div class="nav-collapse collapse">
+                        <? if (!Yii::app()->user->isGuest) { ?>
+                            <p class="navbar-text pull-right">
+                                Logado como <?= Yii::app()->user->objeto->nome ?> <?= CHtml::link(' Sair', Yii::app()->request->baseUrl . "/logout", array('class' => 'btn-logout')); ?></a>
+                            </p>
+                        <? } ?>
+                        <ul class="nav">
+
+                            <? if (!Yii::app()->user->isGuest) { ?>
+                                <li class="active">
+                                    <?= CHtml::link('Início', Yii::app()->request->baseUrl . "/", array('class' => 'btn-logout')); ?>
+                                </li>
+                                <li>
+                                    <?= CHtml::link('E-mails inscritos', Yii::app()->request->baseUrl . "/subscritores/index", array('class' => 'btn-logout')); ?>
+                                </li>
+                                <li>
+                                    <?= CHtml::link('Gerenciar E-mails', Yii::app()->request->baseUrl . "/subscritores/admin", array('class' => 'btn-logout')); ?>
+                                </li>
+                            <? } ?>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <? if (!Yii::app()->user->isGuest) { ?>
+                <div class="span3">
+                    <div class="well sidebar-nav">
+                        <ul class="nav nav-list">
+                            <li class="nav-header">Sidebar</li>
+                            <li class="active"><a href="<?= Yii::app()->request->baseUrl ?>/">Início</a></li>
+                            <li class="nav-header">Usuários</li>
+                            <li><a href="#">Adicionar</a></li>
+                            <li><a href="#">Gerenciar</a></li>
+                            <li class="nav-header">Publicidade</li>
+                            <li><a href="#">Sites</a></li>
+                            <li><a href="#">Adicionar Site</a></li>
+                            <li><a href="#">Zonas</a></li>
+                            <li><a href="#">Adicionar Zona</a></li>
+                            <li><a href="#">Banner</a></li>
+                            <li><a href="#">Adicionar Banner</a></li>
+                            <li><a href="#">Campanhas</a></li>
+                            <li><a href="#">Adicionar Campanha</a></li>
+                            <li class="nav-header">Recursos Humanos</li>
+                            <li><a href="#">Servidores</a></li>
+                            <li><a href="#">Departamentos</a></li>
+                            <li><a href="#">Folha de Ponto</a></li>
+                            <li class="nav-header">Ao Vivo</li>
+                            <li><a href="#">Exibir tela do Ao vivo</a></li>
+                            <li><a href="#">Alterar plano de fundo</a></li>
+                            <li><a href="#">Hashtag</a></li>
+                        </ul>
+                    </div><!--/.well -->
+                </div><!--/span-->
+                <?}?>
+                <div class="span9">
+                    <div class="hero-unit">
+                        <?= $content; ?>
+                    </div>
+                    <hr>
+
+                    <footer>
+                        <p>&copy; Yonatha Almeida yonathalmeida@gmail.com (83) 9173-2814</p>
+                    </footer>
+
+                </div><!--/.fluid-container-->
+
+                <!-- Le javascript
+                ================================================== -->
+                <!-- Placed at the end of the document so the pages load faster -->
+                <script type="text/javascript" src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
+                <link rel="stylesheet" href="<?= Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css" type="text/css" media="screen" />        
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/jquery.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl ?>/themes/ecosistema/global.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-transition.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-alert.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-modal.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-dropdown.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-scrollspy.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-tab.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-tooltip.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-popover.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-button.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-collapse.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-carousel.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-typeahead.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/bootstrap-affix.js"></script>
+                <script src="<?= Yii::app()->request->baseUrl; ?>/js/application.js"></script>
+
+
+
+
+                </body>
+                </html>

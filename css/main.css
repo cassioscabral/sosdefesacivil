@@ -1,0 +1,365 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font: normal 10pt Arial,Helvetica,sans-serif;
+    background: #EFEFEF;
+}
+
+#page
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: white;
+    width: 100%;
+}
+
+header#principal
+{
+    width: 100%;
+    height: 121px;
+    margin: 0px 0px 0px 0px;
+    background: url(../img/header.png) no-repeat center #000; 
+}
+
+header#principal .apptitle {
+    color: #FFFFFF;
+    float: left;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 38px;
+    margin: 70px 0 0 12px;
+    text-decoration: none;
+}
+#header .logo
+{
+    float: left;
+    margin: 20px 0 0 12px;
+}
+#header .menu
+{
+    float: right;
+    margin: 5px 10px 0px 0px;
+    font-size: 11px;
+}
+#header a
+{
+    color: #fff;
+}
+
+#sidebar
+{
+    padding: 20px 20px 20px 0;
+}
+
+#footer
+{
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: 0.8em;
+    text-align: center;
+    border-top: 1px solid #C9E0ED;
+}
+
+#logo
+{
+    padding: 10px 20px;
+    font-size: 200%;
+}
+
+#mainmenu
+{
+    background:white url(bg.gif) repeat-x left top;
+}
+
+#mainmenu ul
+{
+    padding:6px 20px 5px 20px;
+    margin:0px;
+}
+
+#mainmenu ul li
+{
+    display: inline;
+}
+
+#mainmenu ul li a
+{
+    color:#ffffff;
+    background-color:transparent;
+    font-size:12px;
+    font-weight:bold;
+    text-decoration:none;
+    padding:5px 8px;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a
+{
+    color: #6399cd;
+    background-color:#EFF4FA;
+    text-decoration:none;
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+    padding:.8em;
+    margin-bottom:1em;
+    border:2px solid #ddd;
+}
+
+div.flash-error
+{
+    background:#FBE3E4;
+    color:#8a1f11;
+    border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+    background:#FFF6BF;
+    color:#514721;
+    border-color:#FFD324;
+}
+
+div.flash-success
+{
+    background:#E6EFC2;
+    color:#264409;
+    border-color:#C6D880;
+}
+
+div.flash-error a
+{
+    color:#8a1f11;
+}
+
+div.flash-notice a
+{
+    color:#514721;
+}
+
+div.flash-success a
+{
+    color:#264409;
+}
+
+div.form .rememberMe label
+{
+    display: inline;
+}
+
+div.view
+{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #C9E0ED;
+}
+
+div.breadcrumbs
+{
+    font-size: 0.9em;
+    padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+    font-weight: bold;
+}
+
+div.search-form
+{
+    padding: 10px;
+    margin: 10px 0;
+    background: #eee;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+    padding: 3px 8px;
+    background: #B7D6E7;
+    border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: #298dcd;
+}
+
+.portlet-content
+{
+    font-size:0.9em;
+    margin: 0 0 15px 0;
+    padding: 5px 8px;
+    background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.portlet-content li
+{
+    padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.operations li
+{
+    padding-bottom: 2px;
+}
+
+.operations li a
+{
+    font: bold 12px Arial;
+    color: #0066A4;
+    display: block;
+    padding: 2px 0 2px 8px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.operations li a:visited
+{
+    color: #0066A4;
+}
+
+.operations li a:hover
+{
+    background: #80CFFF;
+}
+
+/*------------------------------ campo de busca ----------------------------*/
+
+.center
+{
+    width: 100%;
+    height: 250px;
+/*    background: url(../img/centerbg.png) repeat-x #f7f7fb; */
+    background: url(../img/bg00.jpg) no-repeat; 
+    padding-top: 100px;
+}
+#qaForm
+{
+    background: url("../img/sombra.png") no-repeat scroll center bottom transparent;
+    height: 224px;
+    margin: 0px auto auto;
+    width: 880px;
+}
+
+#qaForm #logoUFCG
+{
+    float: left;
+}
+#qaForm #logoUFCG img
+{
+    height: 165px;
+    width: 158px;
+}
+#qaForm header 
+{
+    float: left;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 28px;
+    line-height: 41px;
+    margin-bottom: 18px;
+    margin-left: 29px;
+    margin-top: 32px;
+    max-height: 130px;
+    min-height: 44px;
+    overflow: hidden;
+    width: 620px;
+}
+#qaForm .timer
+{
+    position: absolute;
+    right: 0;
+    font-size: 11px;
+    color: #666666;
+}
+#qaForm header #icon
+{
+    background: url("../img/sprite.png") no-repeat scroll 0 -23px transparent;
+    display: inline-block;
+    height: 42px;
+    position: relative;
+    width: 40px;
+}
+#qaForm #criterioDeBusca
+{
+    border: 2px solid #D9D9D9;
+    float: left;
+    font-family: Tahoma;
+    font-size: 41px;
+    height: 55px;
+    margin-left: 29px;
+    padding: 3px;
+    width: 547px;
+    font-family: 'Quicksand',sans-serif;
+}
+#qaForm #qaSend
+{
+    background: none repeat scroll 0 0 #0099CC;
+    border: 1px solid #2F116B;
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    height: 64px;
+    margin: 1px 1px 0 3px;
+    position: relative;
+    width: 70px;
+}
+#qaForm #qaSend:hover
+{
+    background: none repeat scroll 0 0 #2F116B;
+    border: 1px solid #0099CC;
+}
+
+.span-19
+{
+    float: none;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    margin-left: 0 !important;
+}
+
+.viewItem
+{
+    border: 1px solid #C9E0ED;
+    margin: auto;
+    padding: 10px;
+    width: 880px;
+}
+#remover a{
+    color: #fff;
+    font-weight: normal;
+}
+
+.container
+{
+    width: 100% !important;
+}
+.container-fluid
+{
+        margin: 0px 0px 0px 0px !important;
+    padding: 0 !important;
+}

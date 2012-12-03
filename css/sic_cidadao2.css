@@ -1,0 +1,137 @@
+#debug
+{
+    background: url(../debug/console-bg.png) repeat-x #000;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    overflow-y: scroll;
+}
+#debug label
+{
+    color: #CCCC00;
+}
+body 
+{
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 12px;
+/*    background: url("../img/bg-tela.png");*/
+}
+nav#top{
+    width: 100%;;
+    margin: auto;
+    height: 23px;
+    position: relative;
+}
+nav#top .acOptions
+{
+    background: url("../img/sprite.png") no-repeat scroll -55px -35px transparent;
+    height: 23px;
+    position: absolute;
+    width: 70px;
+    border: 1px solid #ccc;
+    margin: 5px 00px 0px 5px;
+}
+
+#container
+{
+    height: 185px;
+    margin: 100px auto auto;
+    position: relative;
+    width: 630px;
+}
+#container header 
+{
+    float: left;
+    font-size: 35px;
+    max-height: 130px;
+    min-height: 93px;
+    width: auto;
+    overflow: hidden;
+    /*font-family: 'Oxygen', sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+    line-height: 34px;
+    text-align: center;
+    color: #000;
+}
+#container .timer
+{
+    position: absolute;
+    right: 0;
+    font-size: 11px;
+    color: #666666;
+}
+#container header #icon
+{
+    background: url("../img/sprite.png") no-repeat scroll 0 -23px transparent;
+    display: inline-block;
+    height: 42px;
+    position: relative;
+    width: 40px;
+}
+#qaFormx
+{
+    background: url("../img/sprite.png") no-repeat scroll 0 71px transparent;
+    float: left;
+    height: 89px;
+    margin: 20px 0 20px 0;
+    position: relative;
+    width: 630px;
+}
+#qaFormx #qaSelfx
+{
+    border: 2px solid #D9D9D9;
+    float: left;
+    font-family: Tahoma;
+    font-size: 18px;
+    height: 34px;
+    padding: 14px;
+    width: 523px;
+}
+#qaFormx #qaSendx
+{
+    background: none repeat scroll 0 0 #95BF53;
+    border: 1px solid #68972F;
+    color: #FFFFFF;
+    float: right;
+    font-size: 18px;
+    height: 64px;
+    margin: 1px 1px 0 0;
+    position: relative;
+    width: 70px;
+}
+
+#topo {
+    background: url("../img/sic/bgTopo.jpg") repeat-x scroll 0 0 transparent;
+    height: 87px;
+    width: 100%;
+}
+
+#topo .conteudo
+{
+    margin: auto;
+    height: 83px;
+    width: 972px;
+    background: url(../img/sic/bgTopoConteudo.jpg) no-repeat 351px 5px;
+}
+
+#topo .conteudo h3
+{
+    float: right;
+    font-size: 26px;
+    margin: 33px;
+    font-family: 'Quicksand', sans-serif;
+}
+#topo #logoGov
+{
+    float: left;
+    margin: 11px 0px 0px 20px;
+}
+#topo #logoSigePb
+{
+    float: right;
+    margin: 22px 22px 0px 0px;
+}
+

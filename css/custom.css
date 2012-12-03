@@ -1,0 +1,178 @@
+
+@import "http://fonts.googleapis.com/css?family=Ubuntu:400,700italic,700,500italic,500,400italic";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+    font-family: Arial;
+    font-size: 12px;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+li {
+    list-style: none outside none;
+}
+img {
+    border: medium none;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Ubuntu',sans-serif;
+}
+h1 {
+    color: #1E1E1E;
+    float: left;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    width: 100%;
+}
+.clear {
+    clear: both;
+}
+.nomeEmail li {
+    float: left;
+    list-style: none outside none;
+    width: 600px;
+}
+.nomeEmail li .email {
+    margin-left: 188px;
+}
+.form_login {
+    height: 208px;
+    margin: auto;
+    padding: 0 0 5px 15px;
+    position: relative;
+    width: 509px;
+}
+.form_login img {
+    left: -17px;
+    position: relative;
+    top: -15px;
+}
+.form_login .rememberMe {
+    margin-bottom: 30px;
+    margin-left: -19px;
+}
+.form_login .rememberMe input, .form_login .rememberMe label {
+    float: left;
+}
+.form_intro {
+    float: left;
+    margin-left: 49px;
+}
+.form_login .item {
+    margin-left: -20px;
+}
+.intro {
+    float: left;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    margin-top: 10px;
+    width: 95%;
+}
+.intro h3 {
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+}
+.intro .btn {
+    float: left;
+    margin-left: 183px;
+    margin-top: 15px;
+}
+.intro #btnInscricao {
+    left: 189px;
+    position: relative;
+}
+#adicionar {
+    float: left;
+    margin: 10px 0;
+}
+.nomeEmail {
+    float: left;
+    width: 100%;
+}
+.nomeEmail ul {
+    margin-left: 0;
+}
+#armazenamento_e_educacao_ambiental .row {
+    border-bottom: 1px dotted #CCCCCC;
+    float: left;
+    margin-top: 20px;
+    padding: 5px;
+    width: 95%;
+}
+#armazenamento_e_educacao_ambiental h3 {
+    margin-top: 10px;
+}
+#armazenamento_e_educacao_ambiental .textarea {
+    float: left;
+    height: 100px;
+    margin-top: 20px;
+    padding: 2px;
+    width: 100%;
+}
+#armazenamento_e_educacao_ambiental .btn-primary {
+    float: left;
+    margin-left: 425px;
+    margin-top: 0;
+    padding: 5px;
+}
+#yw0, #yw1 {
+    float: right;
+    width: 100%;
+}
+.alert {
+    width: 95%;
+}
+#armazenamento_e_educacao_ambiental div.form .radio label {
+    font-size: 14px;
+    font-weight: normal;
+}
+#armazenamento_e_educacao_ambiental .row .radio {
+    margin-top: 5px;
+}
+#questionarioView h3 {
+    float: left;
+    margin: 10px 0;
+    width: 100%;
+}
+#questionarioView .row {
+    float: left;
+    font-weight: bold;
+    margin: 10px 0;
+    width: 100%;
+}
+#questionarioView .resposta {
+    font-weight: normal;
+    margin: 5px 0 0;
+}
+.navbar {
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.navbar:hover {
+    opacity: 0.9;
+}
+#content {
+    width: 100%;
+}
